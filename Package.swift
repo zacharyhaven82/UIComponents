@@ -13,7 +13,7 @@ let package = Package(
             targets: ["UIComponents"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/zacharyhaven82/Theming", branch: "main")
+        .package(url: "https://github.com/zacharyhaven82/Theming", revision: "1.0.0"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
