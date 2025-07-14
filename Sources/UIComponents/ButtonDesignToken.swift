@@ -21,7 +21,7 @@ public struct ButtonDesignToken: ButtonDesignAble {
     public var foregroundColor: Color
     public var cornerRadius: CGFloat
     
-    init()
+    public init()
     {
         backgroundColor = Color(hex: DesignTokensProvider.colors.background)
         foregroundColor = Color(hex: DesignTokensProvider.colors.primary)

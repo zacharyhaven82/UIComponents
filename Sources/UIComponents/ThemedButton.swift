@@ -14,7 +14,7 @@ public struct ThemedButton: View {
     let designToken: ButtonDesignToken
     weak var actionHandler: ButtonActionHandler?
     
-    public init(title: String, designToken: ButtonDesignToken, actionHandler: ButtonActionHandler) {
+    public init(title: String, designToken: ButtonDesignToken = ButtonDesignToken(), actionHandler: ButtonActionHandler) {
         self.title = title
         self.designToken = designToken
         self.actionHandler = actionHandler
