@@ -8,12 +8,12 @@
 import SwiftUI
 import Theming
 
-public struct ButtonDesignToken: Sendable {
+public struct ButtonDesignToken: Theming.ButtonThemeable, Sendable {
     public var backgroundColor: Color
     public var foregroundColor: Color
     public var cornerRadius: CGFloat
     
-    public static let defaultButton = ButtonDesignToken(backgroundColor: Theming.DefaultButtonTheme.backgroundColor,
-                                                        foregroundColor: Theming.DefaultButtonTheme.foregroundColor,
-                                                        cornerRadius: Theming.DefaultButtonTheme.cornerRadius)
+    static let defaultButtong = ButtonDesignToken(backgroundColor: Color(Theming.StyleDictionaryEnum.buttonPrimaryBackground),
+                                                  foregroundColor: Color(Theming.StyleDictionaryEnum.buttonPrimaryText),
+                                                  cornerRadius: CGFloat(Theming.StyleDictionaryEnum.buttonBorderRadius))
 }

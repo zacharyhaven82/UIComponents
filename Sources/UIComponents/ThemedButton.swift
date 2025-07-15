@@ -11,10 +11,10 @@ import Theming
 @available(iOS 16.0, *)
 public struct ThemedButton: View {
     let title: String
-    let designToken: ButtonDesignToken
+    let designToken: Theming.ButtonThemeable
     weak var actionHandler: ButtonActionHandler?
     
-    public init(title: String, designToken: ButtonDesignToken = ButtonDesignToken.defaultButton, actionHandler: ButtonActionHandler) {
+    public init(title: String, designToken: Theming.ButtonThemeable = Theming.DefaultButtonTheme(), actionHandler: ButtonActionHandler) {
         self.title = title
         self.designToken = designToken
         self.actionHandler = actionHandler
