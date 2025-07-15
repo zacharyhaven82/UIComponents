@@ -26,9 +26,10 @@ public struct ThemedButton: View {
         }) {
             Text(title)
                 .foregroundColor(designToken.foregroundColor)
+                .padding()
+                .frame(maxWidth: .infinity)
                 .background(designToken.backgroundColor)
                 .cornerRadius(designToken.cornerRadius)
-                .padding()
         }
     }
 }
